@@ -7,7 +7,7 @@ with open('README.rst') as fp:
 
 setup(
     name='PysparkGateway',
-    version='0.0.22',
+    version='0.0.30',
     packages=[
         'pyspark_gateway',
         'pyspark_gateway.patch_files'],
@@ -15,8 +15,8 @@ setup(
     description='Connect Pyspark to remote clusters',
     long_description=readme,
     install_requires=[
-        'requests>=2.25.1',
-        'Flask>=1.1.2',
+        'requests',
+        'Flask',
         'py4j~=0.10.9.2',
         'findspark~=1.4.2'
         ],
