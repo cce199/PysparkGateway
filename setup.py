@@ -15,8 +15,8 @@ setup(
     description='Connect Pyspark to remote clusters',
     long_description=readme,
     install_requires=[
-        'requests',
-        'Flask',
+        'requests~=2.28.1',
+        'Flask~=2.2.2',
         'py4j~=0.10.9.2',
         'findspark~=1.4.2',
         'MarkupSafe==2.0.1'
