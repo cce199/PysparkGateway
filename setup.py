@@ -18,7 +18,8 @@ setup(
         'requests',
         'Flask',
         'py4j~=0.10.9.2',
-        'findspark~=1.4.2'
+        'findspark~=1.4.2',
+        'MarkupSafe==2.0.1'
         ],
     extras_require={
         'dev': [
