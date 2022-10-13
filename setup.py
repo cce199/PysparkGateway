@@ -16,7 +16,7 @@ setup(
     long_description=readme,
     install_requires=[
         'requests',
-        'Flask',
+        'Flask >=2.1.0',
         'py4j~=0.10.9.2',
         'findspark~=1.4.2'
         ],
