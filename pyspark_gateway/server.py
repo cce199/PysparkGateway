@@ -80,4 +80,4 @@ def run(*args, **kwargs):
     app.run(*args, **kwargs)
 
 if __name__ == '__main__':
-    run(debug=True, use_reloader=False, port=HTTP_PORT)
+    run(host='0.0.0.0', debug=True, use_reloader=False, port=HTTP_PORT)
