@@ -77,7 +77,9 @@ def run(*args, **kwargs):
     if 'port' not in kwargs:
         kwargs['port'] = HTTP_PORT
 
+    kwargs['host'] = '0.0.0.0'
+
     app.run(*args, **kwargs)
 
 if __name__ == '__main__':
-    run(host='0.0.0.0', debug=True, use_reloader=False, port=HTTP_PORT)
+    run(debug=True, use_reloader=False, port=HTTP_PORT)

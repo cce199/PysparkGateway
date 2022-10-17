@@ -90,7 +90,7 @@ class PysparkGateway(object):
             sys.exit('Spark version mismatch')
 
     def start_gateway(self):
-        print('Starting local java gateway')
+        print('[Info] pyspark_gateway - Starting local java gateway')
 
         r = requests.get(self.http_url+'/gateway')
         resp = r.json()
@@ -101,4 +101,5 @@ class PysparkGateway(object):
                 auth_token=resp['auth_token'],
                 auto_convert=True)
 
+        print('[Info] pyspark_gateway - Local java gateway ready')
         self.gateway = JavaGateway(gateway_parameters=params)
