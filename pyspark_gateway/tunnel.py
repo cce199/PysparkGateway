@@ -9,7 +9,8 @@ import logging
 logger = logging.getLogger()
 
 class Tunnel(object):
-    bind_address = '127.0.0.1'
+    # bind_address = '127.0.0.1'
+    bind_address = '0.0.0.0'
     remote_socket = None
     local_socket = None
     server_socket = None
