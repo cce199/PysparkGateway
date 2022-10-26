@@ -5,3 +5,7 @@ dist
 MANIFEST
 *.log
 metastore_db
+build/
+PysparkGateway.egg-info/
+pyspark_gateway/.ipynb_checkpoints/server-checkpoint.py
+pyspark_gateway/patch_files/.ipynb_checkpoints/java_gateway_patch-checkpoint.py
