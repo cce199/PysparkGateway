@@ -70,7 +70,7 @@ def run(*args, **kwargs):
         secret_key = os.environ.get('AWS_SECRET_ACCESS_KEY', '-') 
         
         config = {
-            "spark.kubernetes.container.image": "saemaromoon/spark:driver-3.1.2-hadoop-3.2.0-aws-v1",
+            "spark.kubernetes.container.image": "saemaromoon/spark:driver-3.2.1-hadoop-3.2.0-aws-v221108.1",
             "spark.kubernetes.executor.volumes.persistentVolumeClaim.spark-shared-volume.options.claimName": "spark-shared-volume",
             "spark.kubernetes.executor.volumes.persistentVolumeClaim.spark-shared-volume.mount.path": "/home/jovyan",   
             "spark.hadoop.hive.metastore.client.factory.class": "com.amazonaws.glue.catalog.metastore.AWSGlueDataCatalogHiveClientFactory",
