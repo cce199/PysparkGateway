@@ -90,7 +90,7 @@ def run(*args, **kwargs):
             "spark.hadoop.fs.s3a.impl": "org.apache.hadoop.fs.s3a.S3AFileSystem",
             "spark.hadoop.com.amazonaws.services.s3.enableV4": "true", 
             "spark.io.encryption.enabled": "true",
-            "spark.extraListeners": "sparkmonitor.listener.JupyterSparkMonitorListener"
+            # "spark.extraListeners": "sparkmonitor.listener.JupyterSparkMonitorListener"
         }    
         spark_config = SparkConf()
         spark_config.setMaster("k8s://https://kubernetes.default.svc.cluster.local")
