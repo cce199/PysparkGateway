@@ -71,8 +71,8 @@ def run(*args, **kwargs):
         
         config = {
             # "spark.kubernetes.container.image": "saemaromoon/spark:driver-3.2.1-hadoop-3.2.0-aws-v221108.1",
-            "spark.kubernetes.executor.volumes.persistentVolumeClaim.spark-shared-volume.options.claimName": "spark-shared-volume",
-            "spark.kubernetes.executor.volumes.persistentVolumeClaim.spark-shared-volume.mount.path": "/home/jovyan",   
+            # "spark.kubernetes.executor.volumes.persistentVolumeClaim.spark-shared-volume.options.claimName": "spark-shared-volume",
+            # "spark.kubernetes.executor.volumes.persistentVolumeClaim.spark-shared-volume.mount.path": "/home/jovyan",   
             "spark.hadoop.hive.metastore.client.factory.class": "com.amazonaws.glue.catalog.metastore.AWSGlueDataCatalogHiveClientFactory",
             "spark.sql.catalogImplementation":"hive",  
             "spark.driver.extraClassPath": "/opt/spark/jars/*:/opt/spark/emr-lib/*",
