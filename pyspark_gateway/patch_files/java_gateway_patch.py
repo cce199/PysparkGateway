@@ -164,6 +164,8 @@ def local_connect_and_auth(port, auth_secret):
     errors = []
     # Support for both IPv4 and IPv6.
     # On most of IPv6-ready systems, IPv6 will take precedence.
+    print("PysparkGateway.host")
+    print(PysparkGateway.host)
     for res in socket.getaddrinfo(PysparkGateway.host, tmp_port, socket.AF_UNSPEC, socket.SOCK_STREAM):
         af, socktype, proto, _, sa = res
         try:
